@@ -1,0 +1,38 @@
+/*** Start Navbar ***/
+.navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+    background: $secondColor;
+    .navbar-brand {
+        color: #fff;
+        span {
+            color: $firstColor;
+        }
+        &:hover {
+            color: #fff;
+        }
+    }
+    .navbar-toggler {
+        color: #fff;
+        margin-left: auto;
+    }
+    .navbar-nav {
+        margin-top: 30px;
+        flex-direction: column;
+        .nav-item {
+            .nav-link {
+                color: #fff;
+                transition: all .5s ease;
+                &.active,
+                &:hover {
+                    color: $firstColor;
+                }
+                .icon {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+/*** End Navbar ***/

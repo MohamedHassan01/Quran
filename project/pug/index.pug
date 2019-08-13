@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="css/main.css")
+        title Musicious
+    body
+        .row
+            //- Start Left side
+            //- Start Navbar
+            .col-md-2
+                nav(class="navbar navbar-expand-lg navbar-light bg-ligh")
+                    a(class="navbar-brand", href="#")
+                        span Q
+                        | uran
+                    button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#navbarContent", aria-controls="navbarContent", aria-expanded="false", aria-label="Toggle navigation")
+                        span.navbar-toggler-icon
+
+                    div(class="collapse navbar-collapse", id="navbarContent")
+                        ul(class="navbar-nav mr-auto")
+                            li(class="nav-item active")
+                                a(class="nav-link active", href="#", data-scroll="home")
+                                    i(class="icon fas fa-home")
+                                    | Home
+                                    span.sr-only (current)
+                            li(class="nav-item")
+                                a(class="nav-link", href="#", data-scroll="playlists")
+                                    i(class="icon fas fa-list")
+                                    | Playlists
+                            li(class="nav-item")
+                                a(class="nav-link", href="#", data-scroll="favourite")
+                                    i(class="icon fas fa-heart")
+                                    | Favourite
+                            li(class="nav-item")
+                                a(class="nav-link", href="#", data-scroll="artists")
+                                    i(class="icon fas fa-microphone")
+                                    | Artists
+                            li(class="nav-item")
+                                a(class="nav-link", href="#", data-scroll="albums")
+                                    i(class="icon fas fa-compact-disc")
+                                    | Albums
+                            li(class="nav-item")
+                                a(class="nav-link", href="#", data-scroll="songs")
+                                    i(class="icon fas fa-music")
+                                    | Songs
+                            li(class="nav-item")
+                                a(class="nav-link", href="#")
+                                    i(class="icon fas fa-cog")
+                                    | Settings
+            //- End Navbar
+            //- End Left side
+
+            //- Start Content
+            .col-md-7
+                //- Upperbar
+                .row.upper-bar
+                    .col.search
+                        i(class="icon fas fa-search")
+                        input(type="text", placeholder="Search song, artist and albums ...")
+                    .col.trending
+                        i(class="icon fas fa-poll")
+                        p Trending
+
+                //- Start Home
+                .home.section.show#home
+                    .container
+                        //- Start Discover
+                        .row.discover
+                            .heading
+                                h3 Discover
+                                i(class="icon fas fa-ellipsis-h")
+                            .row.cards
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title First part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Second part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Third part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Fourth part
+                                            p.card-text
+                                                small.text-muted 22h
+                        //- End Discover
+
+                        //- Start Our Playlists
+                        .row.playlists
+                            .heading
+                                h3 Your Playlists
+                                p View All
+                            .row.cards
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title First part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title First part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title First part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title First part
+                                            p.card-text
+                                                small.text-muted 22h
+                        //- End Our PlayLists
+                //- End Home
+
+
+                //- Start Playlists
+                .playlists.section.hide#playlists
+                    .container
+                        .row
+                            .heading
+                                h3 Playllists
+                                i(class="icon fas fa-ellipsis-h")
+                        .content
+                            .row.cards
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title First part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Second part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Third part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Fourth part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title First part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Second part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Third part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Fourth part
+                                            p.card-text
+                                                small.text-muted 22h
+                //- End Playlists
+
+                //- Start Favourite
+                .favourite.section.hide#favourite
+                    .container
+                        .row
+                            .heading
+                                h3 Favourite
+                                i(class="icon fas fa-ellipsis-h")
+                        .content
+                            .row.cards
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title First part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Second part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Third part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Fourth part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title First part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Second part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Third part
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Fourth part
+                                            p.card-text
+                                                small.text-muted 22h
+                //- End Favourite
+
+                //- Start Artists
+                .artists.section.hide#artists
+                    .container
+                        .row
+                            .heading
+                                h3 Artists
+                                i(class="icon fas fa-ellipsis-h")
+                        .content.text-center
+                            .row.cards
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer.rounded-circle
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/artists/4.png", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Almuaiqly
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer.rounded-circle
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/artists/4.png", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Almuaiqly
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer.rounded-circle
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/artists/4.png", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Almuaiqly
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer.rounded-circle
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/artists/4.png", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Almuaiqly
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer.rounded-circle
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/artists/4.png", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Almuaiqly
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer.rounded-circle
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/artists/4.png", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Almuaiqly
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer.rounded-circle
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/artists/4.png", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Almuaiqly
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer.rounded-circle
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/artists/4.png", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Almuaiqly
+                                            p.card-text
+                                                small.text-muted 22h
+                //- End Artists
+
+                //- Start Albums
+                .albums.section.hide#albums
+                    .container
+                        .row
+                            .heading
+                                h3 Albums
+                                i(class="icon fas fa-ellipsis-h")
+                        .content.text-center
+                            .row.cards
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/albums/1.jpg", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Alwahed
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/albums/1.jpg", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Forgive Me
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/albums/1.jpg", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Thank You Allah
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/albums/1.jpg", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Ya Nabi
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/albums/1.jpg", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Almuaiqly
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/albums/1.jpg", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Almuaiqly
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/albums/1.jpg", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Almuaiqly
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/albums/1.jpg", class="card-img-top rounded-circle", alt="")
+                                        .card-body
+                                            h5.card-title Almuaiqly
+                                            p.card-text
+                                                small.text-muted 22h
+                //- End Albums
+
+                //- Start Songs
+                .songs.section.hide#songs
+                    .container
+                        .row
+                            .heading
+                                h3 Songs
+                                i(class="icon fas fa-ellipsis-h")
+                        .content
+                            .row.cards
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Al-Fatihah
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Al-Baqarah
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Al-Imran
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Al-Anfal
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Al-Isra
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Al-Kahf
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Taha
+                                            p.card-text
+                                                small.text-muted 22h
+                                .col-sm-6.col-lg-3
+                                    div(class="card")
+                                        .layer
+                                            i(class="fas fa-play fa-3x")
+                                        img(src="imgs/discover/1.jpg", class="card-img-top", alt="")
+                                        .card-body
+                                            h5.card-title Al-Hajj
+                                            p.card-text
+                                                small.text-muted 22h
+                //- End Songs
+            //- End Content
+
+            //- Start Right side
+            .col-md-3.d-none.d-md-block
+                .profile
+                    h6 Mohamed Hassan
+                    i(class="icon fas fa-angle-down")
+                    img(class="rounded-circle", src="imgs/right-side/mohamed.jpeg")
+                
+                .artists
+                    h4 Artists
+                    .artist
+                        img.rounded-circle(src="./imgs/artists/1.jpg", alt="alt")
+                        h6 Alafasy
+                    .artist.active
+                        img.rounded-circle(src="./imgs/artists/2.jpg", alt="alt")
+                        h6 Wadee Al yamani
+                    .artist
+                        img.rounded-circle(src="./imgs/artists/3.jpg", alt="alt")
+                        h6 Fares Abbad
+                    .artist
+                        img.rounded-circle(src="./imgs/artists/4.png", alt="alt")
+                        h6 Almuaiqly
+                    .artist
+                        img.rounded-circle(src="./imgs/artists/1.jpg", alt="alt")
+                        h6 Alafasy
+                    .artist
+                        img.rounded-circle(src="./imgs/artists/1.jpg", alt="alt")
+                        h6 Alafasy
+                    .artist
+                        img.rounded-circle(src="./imgs/artists/1.jpg", alt="alt")
+                        h6 Alafasy
+            //- End Right side
+
+    //- Start Footer
+    footer
+        .container-fluid
+            .row.audio-player
+                .col
+                    .artist
+                        img(src="imgs/artists/2.jpg", alt="")
+                        .info
+                            h6 Wadee Al yamani
+                            p lorem ippusm
+
+                .col
+                    .player
+                        i#previous(class="previous fas fa-step-backward fa-2x")
+                        i#play(class="play fas fa-play-circle fa-2x")
+                        i#next(class="next fas fa-step-forward fa-2x")
+
+                .col
+                    .controls
+                        span
+                        i(class="icon fas fa-volume-up")
+                        i(class="icon fas fa-list")
+                        i(class="icon fas fa-heart")
+    //- End footer
+
+        include includes/scripts

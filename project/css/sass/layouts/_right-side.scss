@@ -1,0 +1,43 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    background: $secondColor;
+    .icon {
+        margin-left: 3px;
+        font-size: 13px;
+    }
+    img {
+        height: 50px;
+        width: 50px;
+        margin-left: 20px;
+    }
+}
+
+.artists {
+    overflow: hidden;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: $secondColor;
+    .artist {
+        display: flex;;
+        align-items: center;
+        transition: all .5s ease;
+        cursor: pointer;
+        img {
+            height: 50px;
+            width: 50px;
+            margin-right: 20px;
+        }
+        &.active,
+        &:hover {
+            color: $firstColor;
+        }
+    }
+}
